@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="br.edu.ifpb.padroes.store.MusicStoreTest" time="0.169" tests="6" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\jucie\OneDrive\Documentos\PADROES_DE_PROJETO\prova_padroes_comportamentais\avaliacao-padroes-comportamentais-loja-discos\target\test-classes;C:\Users\jucie\OneDrive\Documentos\PADROES_DE_PROJETO\prova_padroes_comportamentais\avaliacao-padroes-comportamentais-loja-discos\target\classes;C:\Users\jucie\.m2\repository\org\junit\jupiter\junit-jupiter\6.1.0-M1\junit-jupiter-6.1.0-M1.jar;C:\Users\jucie\.m2\repository\org\junit\jupiter\junit-jupiter-api\6.1.0-M1\junit-jupiter-api-6.1.0-M1.jar;C:\Users\jucie\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\jucie\.m2\repository\org\junit\platform\junit-platform-commons\6.1.0-M1\junit-platform-commons-6.1.0-M1.jar;C:\Users\jucie\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\jucie\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\jucie\.m2\repository\org\junit\jupiter\junit-jupiter-params\6.1.0-M1\junit-jupiter-params-6.1.0-M1.jar;C:\Users\jucie\.m2\repository\org\junit\jupiter\junit-jupiter-engine\6.1.0-M1\junit-jupiter-engine-6.1.0-M1.jar;C:\Users\jucie\.m2\repository\org\junit\platform\junit-platform-engine\6.1.0-M1\junit-platform-engine-6.1.0-M1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Fortaleza"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\jucie\AppData\Local\Temp\surefire5963609795995654908\surefirebooter-20251206145709483_3.jar C:\Users\jucie\AppData\Local\Temp\surefire5963609795995654908 2025-12-06T14-57-09_209-jvmRun1 surefire-20251206145709483_1tmp surefire_0-20251206145709483_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\jucie\OneDrive\Documentos\PADROES_DE_PROJETO\prova_padroes_comportamentais\avaliacao-padroes-comportamentais-loja-discos\target\test-classes;C:\Users\jucie\OneDrive\Documentos\PADROES_DE_PROJETO\prova_padroes_comportamentais\avaliacao-padroes-comportamentais-loja-discos\target\classes;C:\Users\jucie\.m2\repository\org\junit\jupiter\junit-jupiter\6.1.0-M1\junit-jupiter-6.1.0-M1.jar;C:\Users\jucie\.m2\repository\org\junit\jupiter\junit-jupiter-api\6.1.0-M1\junit-jupiter-api-6.1.0-M1.jar;C:\Users\jucie\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\jucie\.m2\repository\org\junit\platform\junit-platform-commons\6.1.0-M1\junit-platform-commons-6.1.0-M1.jar;C:\Users\jucie\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\jucie\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\jucie\.m2\repository\org\junit\jupiter\junit-jupiter-params\6.1.0-M1\junit-jupiter-params-6.1.0-M1.jar;C:\Users\jucie\.m2\repository\org\junit\jupiter\junit-jupiter-engine\6.1.0-M1\junit-jupiter-engine-6.1.0-M1.jar;C:\Users\jucie\.m2\repository\org\junit\platform\junit-platform-engine\6.1.0-M1\junit-platform-engine-6.1.0-M1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\jucie"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\jucie\OneDrive\Documentos\PADROES_DE_PROJETO\prova_padroes_comportamentais\avaliacao-padroes-comportamentais-loja-discos"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\jucie\AppData\Local\Temp\surefire5963609795995654908\surefirebooter-20251206145709483_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.6+8-LTS-188"/>
+    <property name="user.name" value="jucie"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.2.5\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="localRepository" value="C:\Users\jucie\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\jucie\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2025.2.5"/>
+    <property name="java.version" value="21.0.6"/>
+    <property name="user.dir" value="C:\Users\jucie\OneDrive\Documentos\PADROES_DE_PROJETO\prova_padroes_comportamentais\avaliacao-padroes-comportamentais-loja-discos"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="jansi.passthrough" value="true"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python313\Scripts\;C:\Python313\;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;%NVM_HOME%;%NVM_SYMLINK%;C:\Users\jucie\AppData\Local\Microsoft\WindowsApps;C:\Users\jucie\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jucie\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.2.5\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.6+8-LTS-188"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="maven.repo.local" value="C:\Users\jucie\.m2\repository"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testPurchaseFailsDueToInsufficientCredit" classname="br.edu.ifpb.padroes.store.MusicStoreTest" time="0.077">
+    <system-out><![CDATA[Added: The Tortured Poets Department
+Validation failed: Insufficient credit
+Out of stock!
+]]></system-out>
+  </testcase>
+  <testcase name="testPurchaseFailsDueToAgeRestriction" classname="br.edu.ifpb.padroes.store.MusicStoreTest" time="0.012">
+    <system-out><![CDATA[Added: Enema of the State
+Validation failed: Age restriction
+Out of stock!
+]]></system-out>
+  </testcase>
+  <testcase name="testPurchaseFailsDueToOutOfStock" classname="br.edu.ifpb.padroes.store.MusicStoreTest" time="0.003">
+    <system-out><![CDATA[Added: Mellon Collie and the Infinite Sadness
+Validation failed: Out of stock
+Out of stock!
+]]></system-out>
+  </testcase>
+  <testcase name="testPurchaseAppliesOldVinylDiscount" classname="br.edu.ifpb.padroes.store.MusicStoreTest" time="0.018">
+    <system-out><![CDATA[Added: The Rise and Fall of Ziggy Stardust and the Spiders from Mars
+Purchase: The Rise and Fall of Ziggy Stardust and the Spiders from Mars - David Bowie (1972) by Premium Carl
+Original price: $80.0
+Discount: $20.0
+Final price: $60.0
+]]></system-out>
+  </testcase>
+  <testcase name="testPurchaseAppliesVIPDiscount" classname="br.edu.ifpb.padroes.store.MusicStoreTest" time="0.005">
+    <system-out><![CDATA[Added: Man on the Moon: The End of Days
+Purchase: Man on the Moon: The End of Days - Kid Cudi (1999) by VIP Johnny
+Original price: $50.0
+Discount: $12.5
+Final price: $37.5
+]]></system-out>
+  </testcase>
+  <testcase name="testSuccessfulPurchase" classname="br.edu.ifpb.padroes.store.MusicStoreTest" time="0.005">
+    <system-out><![CDATA[Added: Reflektor
+Purchase: Reflektor - Arcade Fire (2013) by John Doe
+Original price: $150.0
+Discount: $7.5
+Final price: $142.5
+]]></system-out>
+  </testcase>
+</testsuite>

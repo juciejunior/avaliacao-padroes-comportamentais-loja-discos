@@ -1,0 +1,17 @@
+br\edu\ifpb\padroes\store\discount\DiscountRegular.class
+br\edu\ifpb\padroes\store\MusicStore$1.class
+br\edu\ifpb\padroes\store\validation\CreditHandler.class
+br\edu\ifpb\padroes\customer\CustomerType.class
+br\edu\ifpb\padroes\customer\Customer.class
+br\edu\ifpb\padroes\store\MusicStore.class
+br\edu\ifpb\padroes\store\SearchType.class
+br\edu\ifpb\padroes\store\notification\StoreObserver.class
+br\edu\ifpb\padroes\music\AgeRestriction.class
+br\edu\ifpb\padroes\store\discount\DiscountPremium.class
+br\edu\ifpb\padroes\store\discount\DiscountStrategy.class
+br\edu\ifpb\padroes\store\validation\PurchaseHandler.class
+br\edu\ifpb\padroes\store\discount\DiscountVIP.class
+br\edu\ifpb\padroes\store\validation\StockHandler.class
+br\edu\ifpb\padroes\music\Album.class
+br\edu\ifpb\padroes\store\validation\AgeHandler.class
+br\edu\ifpb\padroes\music\MediaType.class

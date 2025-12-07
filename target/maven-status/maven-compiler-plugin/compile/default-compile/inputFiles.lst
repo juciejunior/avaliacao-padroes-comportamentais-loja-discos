@@ -1,0 +1,16 @@
+C:\Users\jucie\OneDrive\Documentos\PADROES_DE_PROJETO\prova_padroes_comportamentais\avaliacao-padroes-comportamentais-loja-discos\src\main\java\br\edu\ifpb\padroes\customer\Customer.java
+C:\Users\jucie\OneDrive\Documentos\PADROES_DE_PROJETO\prova_padroes_comportamentais\avaliacao-padroes-comportamentais-loja-discos\src\main\java\br\edu\ifpb\padroes\customer\CustomerType.java
+C:\Users\jucie\OneDrive\Documentos\PADROES_DE_PROJETO\prova_padroes_comportamentais\avaliacao-padroes-comportamentais-loja-discos\src\main\java\br\edu\ifpb\padroes\music\AgeRestriction.java
+C:\Users\jucie\OneDrive\Documentos\PADROES_DE_PROJETO\prova_padroes_comportamentais\avaliacao-padroes-comportamentais-loja-discos\src\main\java\br\edu\ifpb\padroes\music\Album.java
+C:\Users\jucie\OneDrive\Documentos\PADROES_DE_PROJETO\prova_padroes_comportamentais\avaliacao-padroes-comportamentais-loja-discos\src\main\java\br\edu\ifpb\padroes\music\MediaType.java
+C:\Users\jucie\OneDrive\Documentos\PADROES_DE_PROJETO\prova_padroes_comportamentais\avaliacao-padroes-comportamentais-loja-discos\src\main\java\br\edu\ifpb\padroes\store\discount\DiscountPremium.java
+C:\Users\jucie\OneDrive\Documentos\PADROES_DE_PROJETO\prova_padroes_comportamentais\avaliacao-padroes-comportamentais-loja-discos\src\main\java\br\edu\ifpb\padroes\store\discount\DiscountRegular.java
+C:\Users\jucie\OneDrive\Documentos\PADROES_DE_PROJETO\prova_padroes_comportamentais\avaliacao-padroes-comportamentais-loja-discos\src\main\java\br\edu\ifpb\padroes\store\discount\DiscountStrategy.java
+C:\Users\jucie\OneDrive\Documentos\PADROES_DE_PROJETO\prova_padroes_comportamentais\avaliacao-padroes-comportamentais-loja-discos\src\main\java\br\edu\ifpb\padroes\store\discount\DiscountVIP.java
+C:\Users\jucie\OneDrive\Documentos\PADROES_DE_PROJETO\prova_padroes_comportamentais\avaliacao-padroes-comportamentais-loja-discos\src\main\java\br\edu\ifpb\padroes\store\MusicStore.java
+C:\Users\jucie\OneDrive\Documentos\PADROES_DE_PROJETO\prova_padroes_comportamentais\avaliacao-padroes-comportamentais-loja-discos\src\main\java\br\edu\ifpb\padroes\store\notification\StoreObserver.java
+C:\Users\jucie\OneDrive\Documentos\PADROES_DE_PROJETO\prova_padroes_comportamentais\avaliacao-padroes-comportamentais-loja-discos\src\main\java\br\edu\ifpb\padroes\store\SearchType.java
+C:\Users\jucie\OneDrive\Documentos\PADROES_DE_PROJETO\prova_padroes_comportamentais\avaliacao-padroes-comportamentais-loja-discos\src\main\java\br\edu\ifpb\padroes\store\validation\AgeHandler.java
+C:\Users\jucie\OneDrive\Documentos\PADROES_DE_PROJETO\prova_padroes_comportamentais\avaliacao-padroes-comportamentais-loja-discos\src\main\java\br\edu\ifpb\padroes\store\validation\CreditHandler.java
+C:\Users\jucie\OneDrive\Documentos\PADROES_DE_PROJETO\prova_padroes_comportamentais\avaliacao-padroes-comportamentais-loja-discos\src\main\java\br\edu\ifpb\padroes\store\validation\PurchaseHandler.java
+C:\Users\jucie\OneDrive\Documentos\PADROES_DE_PROJETO\prova_padroes_comportamentais\avaliacao-padroes-comportamentais-loja-discos\src\main\java\br\edu\ifpb\padroes\store\validation\StockHandler.java

@@ -5,6 +5,9 @@ import br.edu.ifpb.padroes.customer.CustomerType;
 import br.edu.ifpb.padroes.music.AgeRestriction;
 import br.edu.ifpb.padroes.music.Album;
 import br.edu.ifpb.padroes.music.MediaType;
+import br.edu.ifpb.padroes.store.validation.*;
+import br.edu.ifpb.padroes.store.discount.*;
+import br.edu.ifpb.padroes.store.notification.StoreObserver;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -14,14 +17,24 @@ public class MusicStore {
 
     private List<Album> inventory = new ArrayList<>();
     private List<Customer> customers = new ArrayList<>();
+    private List<StoreObserver> observers = new ArrayList<>();
 
     public void addMusic(Album album) {
         inventory.add(album);
         System.out.println("Added: " + album.getTitle());
     }
 
+    public void addObserver(StoreObserver observer) {
+        this.observers.add(observer);
+    }
+
+    public void removeObserver(StoreObserver observer) {
+        this.observers.remove(observer);
+    }
+
     public void addCustomer(Customer customer) {
         customers.add(customer);
+        addObserver(customer); // Registra automaticamente
     }
 
     public List<Album> searchMusic(SearchType searchType, String searchTerm) {
@@ -57,26 +70,22 @@ public class MusicStore {
     }
 
     public double calculateDiscount(Album album, CustomerType customerType) {
-        double discount = 0;
+        DiscountStrategy strategy;
 
-        if (customerType.equals(CustomerType.VIP)) {
-            discount = album.getPrice() * 0.20;
-        } else if (customerType.equals(CustomerType.PREMIUM)) {
-            discount = album.getPrice() * 0.15;
-        } else if (customerType.equals(CustomerType.REGULAR)) {
-            discount = album.getPrice() * 0.05;
+        switch (customerType) {
+            case VIP:
+                strategy = new DiscountVIP();
+                break;
+            case PREMIUM:
+                strategy = new DiscountPremium();
+                break;
+            case REGULAR:
+            default:
+                strategy = new DiscountRegular();
+                break;
         }
 
-        // Additional discounts
-        if (album.getType().equals(MediaType.VINYL) && album.getReleaseDate().getYear() < 1980) {
-            discount += album.getPrice() * 0.10;
-        }
-
-        if (album.getGenre().equalsIgnoreCase("Pop Punk") && customerType.equals(CustomerType.VIP)) {
-            discount += album.getPrice() * 0.05;
-        }
-
-        return discount;
+        return strategy.calculate(album);
     }
 
     public void purchaseMusic(Customer customer, Album album) {
@@ -92,37 +101,31 @@ public class MusicStore {
             album.decreaseStock();
             customer.addPurchase(album);
 
-            for (Customer c : customers) {
-                if (c.isInterestedIn(album.getGenre()) && !c.equals(customer)) {
-                    System.out.println("Notifying " + c.getName() + " about popular " + album.getGenre() + " purchase");
-                }
-            }
+            // Notifica os observadores
+            notifyObservers(album, customer);
         } else {
             System.out.println("Out of stock!");
         }
     }
 
-    public boolean validatePurchase(Customer customer, Album album) {
-        // Check stock
-        if (album.getStock() <= 0) {
-            System.out.println("Validation failed: Out of stock");
-            return false;
+    private void notifyObservers(Album album, Customer buyer) {
+        for (StoreObserver observer : observers) {
+            // Não notifica quem comprou
+            if (!observer.equals(buyer)) {
+                observer.update(album);
+            }
         }
-
-        // Check customer credit
-        if (customer.getCredit() < album.getPrice()) {
-            System.out.println("Validation failed: Insufficient credit");
-            return false;
-        }
-
-        // Check age restriction for explicit content
-        if (album.getAgeRestriction().equals(AgeRestriction.PARENTAL_ADVISORY) && customer.getDateOfBirth().isAfter(LocalDate.now().minusYears(18))) {
-            System.out.println("Validation failed: Age restriction");
-            return false;
-        }
-
-        return true;
     }
+
+    public boolean validatePurchase(Customer customer, Album album) {
+        PurchaseHandler chain = new StockHandler();
+
+        chain.linkWith(new CreditHandler())
+                .linkWith(new AgeHandler());
+
+        return chain.validate(customer, album);
+    }
+
 
     public List<Album> getInventory() {
         return inventory;
