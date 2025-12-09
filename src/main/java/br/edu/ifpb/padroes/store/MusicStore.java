@@ -34,7 +34,7 @@ public class MusicStore {
 
     public void addCustomer(Customer customer) {
         customers.add(customer);
-        addObserver(customer); // Registra automaticamente
+        addObserver(customer);
     }
 
     public List<Album> searchMusic(SearchType searchType, String searchTerm) {
@@ -74,23 +74,21 @@ public class MusicStore {
             double finalPrice = album.getPrice() - discount;
 
             System.out.println("Purchase: " + album.getFormattedName() + " by " + customer.getName());
-            System.out.println("Original price: $" + album.getPrice());
-            System.out.println("Discount: $" + discount);
-            System.out.println("Final price: $" + finalPrice);
+            System.out.println("Original price: $ " + album.getPrice());
+            System.out.println("Discount: $ " + discount);
+            System.out.println("Final price: $ " + finalPrice);
 
             album.decreaseStock();
             customer.addPurchase(album);
 
-            // Notifica os observadores
             notifyObservers(album, customer);
         } else {
-            System.out.println("Out of stock!");
+            System.out.println("Out of stock");
         }
     }
 
     private void notifyObservers(Album album, Customer buyer) {
         for (StoreObserver observer : observers) {
-            // Não notifica quem comprou
             if (!observer.equals(buyer)) {
                 observer.update(album);
             }

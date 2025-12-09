@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="br.edu.ifpb.padroes.store.MusicStoreTest" time="0.169" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="br.edu.ifpb.padroes.store.MusicStoreTest" time="0.174" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="BR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\jucie\AppData\Local\Temp\surefire5963609795995654908\surefirebooter-20251206145709483_3.jar C:\Users\jucie\AppData\Local\Temp\surefire5963609795995654908 2025-12-06T14-57-09_209-jvmRun1 surefire-20251206145709483_1tmp surefire_0-20251206145709483_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\jucie\AppData\Local\Temp\surefire5068417744410320912\surefirebooter-20251209181034648_3.jar C:\Users\jucie\AppData\Local\Temp\surefire5068417744410320912 2025-12-09T18-10-34_389-jvmRun1 surefire-20251209181034648_1tmp surefire_0-20251209181034648_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\jucie\OneDrive\Documentos\PADROES_DE_PROJETO\prova_padroes_comportamentais\avaliacao-padroes-comportamentais-loja-discos\target\test-classes;C:\Users\jucie\OneDrive\Documentos\PADROES_DE_PROJETO\prova_padroes_comportamentais\avaliacao-padroes-comportamentais-loja-discos\target\classes;C:\Users\jucie\.m2\repository\org\junit\jupiter\junit-jupiter\6.1.0-M1\junit-jupiter-6.1.0-M1.jar;C:\Users\jucie\.m2\repository\org\junit\jupiter\junit-jupiter-api\6.1.0-M1\junit-jupiter-api-6.1.0-M1.jar;C:\Users\jucie\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\jucie\.m2\repository\org\junit\platform\junit-platform-commons\6.1.0-M1\junit-platform-commons-6.1.0-M1.jar;C:\Users\jucie\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\jucie\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\jucie\.m2\repository\org\junit\jupiter\junit-jupiter-params\6.1.0-M1\junit-jupiter-params-6.1.0-M1.jar;C:\Users\jucie\.m2\repository\org\junit\jupiter\junit-jupiter-engine\6.1.0-M1\junit-jupiter-engine-6.1.0-M1.jar;C:\Users\jucie\.m2\repository\org\junit\platform\junit-platform-engine\6.1.0-M1\junit-platform-engine-6.1.0-M1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\jucie\AppData\Local\Temp\surefire5963609795995654908\surefirebooter-20251206145709483_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\jucie\AppData\Local\Temp\surefire5068417744410320912\surefirebooter-20251209181034648_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.6+8-LTS-188"/>
@@ -63,7 +63,7 @@
     <property name="maven.repo.local" value="C:\Users\jucie\.m2\repository"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testPurchaseFailsDueToInsufficientCredit" classname="br.edu.ifpb.padroes.store.MusicStoreTest" time="0.077">
+  <testcase name="testPurchaseFailsDueToInsufficientCredit" classname="br.edu.ifpb.padroes.store.MusicStoreTest" time="0.076">
     <system-out><![CDATA[Added: The Tortured Poets Department
 Validation failed: Insufficient credit
 Out of stock!
@@ -75,13 +75,13 @@ Validation failed: Age restriction
 Out of stock!
 ]]></system-out>
   </testcase>
-  <testcase name="testPurchaseFailsDueToOutOfStock" classname="br.edu.ifpb.padroes.store.MusicStoreTest" time="0.003">
+  <testcase name="testPurchaseFailsDueToOutOfStock" classname="br.edu.ifpb.padroes.store.MusicStoreTest" time="0.004">
     <system-out><![CDATA[Added: Mellon Collie and the Infinite Sadness
 Validation failed: Out of stock
 Out of stock!
 ]]></system-out>
   </testcase>
-  <testcase name="testPurchaseAppliesOldVinylDiscount" classname="br.edu.ifpb.padroes.store.MusicStoreTest" time="0.018">
+  <testcase name="testPurchaseAppliesOldVinylDiscount" classname="br.edu.ifpb.padroes.store.MusicStoreTest" time="0.014">
     <system-out><![CDATA[Added: The Rise and Fall of Ziggy Stardust and the Spiders from Mars
 Purchase: The Rise and Fall of Ziggy Stardust and the Spiders from Mars - David Bowie (1972) by Premium Carl
 Original price: $80.0
@@ -89,7 +89,7 @@ Discount: $20.0
 Final price: $60.0
 ]]></system-out>
   </testcase>
-  <testcase name="testPurchaseAppliesVIPDiscount" classname="br.edu.ifpb.padroes.store.MusicStoreTest" time="0.005">
+  <testcase name="testPurchaseAppliesVIPDiscount" classname="br.edu.ifpb.padroes.store.MusicStoreTest" time="0.006">
     <system-out><![CDATA[Added: Man on the Moon: The End of Days
 Purchase: Man on the Moon: The End of Days - Kid Cudi (1999) by VIP Johnny
 Original price: $50.0

@@ -1,14 +1,12 @@
 package br.edu.ifpb.padroes.customer;
 
 import br.edu.ifpb.padroes.music.Album;
-// Importante: Importar a interface que criamos
 import br.edu.ifpb.padroes.store.notification.StoreObserver;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-// CORREÇÃO AQUI: Adicionar "implements StoreObserver"
 public class Customer implements StoreObserver {
 
     private String name;
@@ -46,7 +44,6 @@ public class Customer implements StoreObserver {
     public int getPurchaseCount() { return purchases.size(); }
     public CustomerType getType() { return type; }
 
-    // CORREÇÃO AQUI: Implementar o método obrigatório da interface
     @Override
     public void update(Album album) {
         if (this.isInterestedIn(album.getGenre())) {
