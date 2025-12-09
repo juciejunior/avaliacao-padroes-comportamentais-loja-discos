@@ -9,7 +9,6 @@ import org.junit.jupiter.api.Test;
 import java.time.LocalDate;
 import java.util.List;
 
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SearchMusicTest {
@@ -17,7 +16,7 @@ class SearchMusicTest {
     private MusicStore store;
 
     @BeforeEach
-    void setUp(){
+    void setUp() {
         store = new MusicStore();
 
         store.getInventory().add(new Album(
@@ -66,7 +65,7 @@ class SearchMusicTest {
     }
 
     @Test
-    void deveBuscarPorTitulo() {
+    void shouldSearchByTitle() {
         List<Album> results = store.searchMusic(SearchType.TITLE, "Master");
 
         assertEquals(1, results.size());
@@ -74,7 +73,7 @@ class SearchMusicTest {
     }
 
     @Test
-    void deveBuscarPorArtista() {
+    void shouldSearchByArtist() {
         List<Album> results = store.searchMusic(SearchType.ARTIST, "Metallica");
 
         assertEquals(1, results.size());
@@ -82,17 +81,16 @@ class SearchMusicTest {
     }
 
     @Test
-    void deveBuscarPorGenero() {
+    void shouldSearchByGenre() {
         List<Album> results = store.searchMusic(SearchType.GENRE, "Rock");
 
         assertEquals(2, results.size());
     }
 
     @Test
-    void deveBuscarPorTipo() {
+    void shouldSearchByType() {
         List<Album> results = store.searchMusic(SearchType.TYPE, "CD");
 
         assertEquals(2, results.size());
     }
-
 }
